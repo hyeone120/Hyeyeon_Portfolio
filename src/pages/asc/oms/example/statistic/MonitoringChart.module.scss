@@ -1,0 +1,38 @@
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  padding: 40px;
+}
+
+.wrapperColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #bdbdbd;
+  padding: 10px;
+}
+
+.code {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  overflow-x: auto;
+}
+
+.chart {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

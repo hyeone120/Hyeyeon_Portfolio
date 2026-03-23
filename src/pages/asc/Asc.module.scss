@@ -1,0 +1,61 @@
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0 40px 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  min-width: 120px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.skillBox {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.skillGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.groupTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.03em;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  padding: 6px 12px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+
+  background: #f8fafc;
+  color: #374151;
+
+  transition: all 0.2s ease;
+}
+
+.skill:hover {
+  background: #e8f2ff;
+  border-color: #91caff;
+  color: #1d4ed8;
+  transform: translateY(-1px);
+}

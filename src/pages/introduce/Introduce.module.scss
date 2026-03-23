@@ -1,0 +1,47 @@
+.body {
+  margin: 1.5%;
+  padding: 28px 32px;
+
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e8e8e8;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.title {
+  min-width: 120px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.content {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
