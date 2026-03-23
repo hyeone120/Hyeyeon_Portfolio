@@ -1,12 +1,5 @@
 import { Bar } from "react-chartjs-2";
 import {
-  codeString,
-  labels,
-  statusFailed,
-  statusRegistered,
-  statusSuccess,
-} from "./ChartData";
-import {
   Chart as ChartJS,
   CategoryScale,
   LinearScale,
@@ -15,6 +8,13 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import CodeTabs from "./code/CodeTabs";
+import {
+  labels,
+  statusFailed,
+  statusRegistered,
+  statusSuccess,
+} from "./code/ChartData";
 import styles from "./MonitoringChart.module.scss";
 
 ChartJS.register(
@@ -73,9 +73,7 @@ const MonitoringChart = () => {
             <Bar data={data} options={options} />
           </div>
 
-          <pre className={styles.code}>
-            <code>{codeString}</code>
-          </pre>
+          <CodeTabs />
         </div>
       </div>
     </>

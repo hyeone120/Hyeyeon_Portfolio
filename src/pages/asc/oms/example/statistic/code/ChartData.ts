@@ -19,8 +19,22 @@ export const statusRegistered = [
 export const statusSuccess = [60, 45, 80, 50, 20, 70, 50, 30, 90, 10, 60, 30];
 export const statusFailed = [30, 20, 10, 5, 15, 30, 40, 90, 60, 45, 40, 30];
 
-export const codeString = `
-import { Bar } from 'react-chartjs-2';
+///code
+export const sqlCode = `WITH StatusValues AS (
+    SELECT DISTINCT status
+    FROM (VALUES (1),(2),(3)) AS v(status)
+),
+a AS (
+    SELECT Status, DateTime
+    FROM TB_ASystem
+    WHERE YEAR(DateTime) = #{year}
+)
+SELECT sv.Status, ISNULL(COUNT(a.status), 0) as cnt
+FROM StatusValues sv
+LEFT JOIN a ON sv.status = a.Status
+GROUP BY sv.Status`;
+
+export const frontendCode = `import { Bar } from 'react-chartjs-2';
 
 <Bar
   options={{
