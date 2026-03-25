@@ -12,14 +12,13 @@ const MainBody = () => {
       <Content
         style={{
           margin: "0 16px",
-          height: "calc(100vh - 64px)",
+          height: "100%",
           overflowY: "auto",
         }}
       >
         <div
           style={{
             padding: 30,
-            minHeight: 760,
             background: colorBgContainer,
             borderRadius: borderRadiusLG,
           }}

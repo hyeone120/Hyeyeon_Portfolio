@@ -6,7 +6,7 @@ import styles from "../Dds.module.scss";
 const DdsResult = () => {
   return (
     <>
-      <div style={{ marginTop: 60 }}>
+      <div>
         <h2 style={{ marginBottom: 30 }}>핵심 기여</h2>
 
         <Timeline mode="left">

@@ -5,7 +5,7 @@ import { Layout } from "antd";
 
 const Home = () => {
   return (
-    <Layout style={{ minHeight: "100vh" }}>
+    <Layout style={{ height: "100vh", overflow: "hidden" }}>
       <MainHeader />
       <Layout>
         <LeftMenu />

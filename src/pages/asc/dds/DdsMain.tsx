@@ -1,9 +1,9 @@
 import { Anchor } from "antd";
-import React from "react";
 import DdsStructure from "./structure/DdsStructure";
 import DdsResult from "./result/DdsResult";
-import styles from "./Dds.module.scss";
 import DdsFunction from "./function/DdsFunction";
+import MapDashboard from "./example/pages/MapDashboard";
+import styles from "./Dds.module.scss";
 
 const DdsMain = () => {
   return (
@@ -14,6 +14,7 @@ const DdsMain = () => {
           top: 0,
           background: "#fff",
           zIndex: 10,
+          height: "100%",
         }}
       >
         <Anchor
@@ -34,6 +35,11 @@ const DdsMain = () => {
               title: "자료배포시스템 구조",
             },
             {
+              key: "mapDashboard",
+              href: "#mapDashboard",
+              title: "예시",
+            },
+            {
               key: "ddsResult",
               href: "#ddsResult",
               title: "결과 및 성과",
@@ -47,6 +53,9 @@ const DdsMain = () => {
         </div>
         <div id="ddsStructure" className={styles.section}>
           <DdsStructure />
+        </div>
+        <div id="mapDashboard" className={styles.section}>
+          <MapDashboard />
         </div>
         <div id="ddsResult" className={styles.section}>
           <DdsResult />

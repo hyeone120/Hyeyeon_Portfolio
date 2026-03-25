@@ -12,7 +12,7 @@ export const functions = [
     desc: [
       "ag-grid 기반 대량 데이터 검색",
       "필터 / 정렬 / 페이징 지원",
-      "필요한 산출물을 빠르게 조회(indexing 및 최적화된 쿼리 활용)",
+      "필요한 산출물을 빠르게 조회(indexing 활용)",
     ],
   },
   {
