@@ -45,11 +45,16 @@
 
 :global(.ag-theme-alpine .ag-filter-filter input) {
   width: 100%;
+  min-width: 150px;
   border-radius: 8px;
   border: 1px solid #ddd;
-  padding: 6px 8px 6px 30px;
+  padding: 6px 8px 6px 32px;
   outline: none;
   box-sizing: border-box;
+}
+
+:global(.ag-input-field-input.ag-text-field-input) {
+  padding: 6px 25px !important;
 }
 
 :global(.ag-theme-alpine .ag-filter-filter input:focus) {
@@ -62,9 +67,9 @@
 }
 
 :global(.ag-theme-alpine .ag-menu) {
-  width: 180px !important;
-  min-width: 180px !important;
-  max-width: 180px !important;
+  width: 200px !important;
+  min-width: 200px !important;
+  max-width: 200px !important;
   height: 70px !important;
   background: #ffffff !important;
   border-radius: 10px;

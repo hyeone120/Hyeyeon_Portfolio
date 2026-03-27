@@ -23,12 +23,12 @@ const IntroduceAsc = () => {
             {
               key: "skill-tool",
               href: "#skill-tool",
-              title: "Skill&Tool",
+              title: "기술 및 도구",
             },
             {
               key: "structure",
               href: "#structure",
-              title: "Structure",
+              title: "시스템 구조",
             },
           ]}
         />

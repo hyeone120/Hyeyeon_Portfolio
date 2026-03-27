@@ -26,7 +26,7 @@ const ImageSystemMain = () => {
             {
               key: "skill-tool",
               href: "#skill-tool",
-              title: "기술 및 구조",
+              title: "기술 및 도구",
             },
             {
               key: "imgSysFunction",
@@ -56,7 +56,11 @@ const ImageSystemMain = () => {
         <div id="structure" className={styles.section}>
           <Structure />
         </div>
-        <div id="imgSysResult" className={styles.section}>
+        <div
+          id="imgSysResult"
+          className={styles.section}
+          style={{ minHeight: "40vh" }}
+        >
           <ImgSysResult />
         </div>
       </div>

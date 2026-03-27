@@ -57,7 +57,11 @@ const DdsMain = () => {
         <div id="mapDashboard" className={styles.section}>
           <MapDashboard />
         </div>
-        <div id="ddsResult" className={styles.section}>
+        <div
+          id="ddsResult"
+          className={styles.section}
+          style={{ minHeight: "60vh" }}
+        >
           <DdsResult />
         </div>
       </div>

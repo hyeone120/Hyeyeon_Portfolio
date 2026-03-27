@@ -7,7 +7,6 @@ import BridgeNode from "./node/BridgeNode";
 import DdsUserNode from "./node/DdsUserNode";
 import UserNode from "./node/UserNode";
 import "reactflow/dist/style.css";
-import styles from "../../Asc.module.scss";
 
 const Structure = () => {
   const nodeTypes = {
@@ -19,8 +18,8 @@ const Structure = () => {
   };
 
   return (
-    <div>
-      <div className={styles.title}>시스템 구조</div>
+    <div style={{ width: "100%", height: "500px" }}>
+      <h2 style={{ marginBottom: "20px" }}>시스템 구조</h2>
       <div style={{ width: "100%", height: "800px" }}>
         <ReactFlow
           nodes={nodes}

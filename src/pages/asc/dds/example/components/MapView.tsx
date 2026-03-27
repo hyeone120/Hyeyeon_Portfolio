@@ -90,7 +90,7 @@ const MapView = ({ places, selectedPlace, onSelect }: any) => {
     });
   }, [selectedPlace]);
 
-  return <div ref={mapRef} style={{ width: "100%", height: "80%" }} />;
+  return <div ref={mapRef} style={{ width: "100%", height: "100%" }} />;
 };
 
 export default MapView;

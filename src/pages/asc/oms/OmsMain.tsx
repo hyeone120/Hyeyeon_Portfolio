@@ -58,7 +58,11 @@ const OmsMain = () => {
           <MonitoringChart />
           <MonitoringWmi />
         </div>
-        <div id="omsResult" className={styles.section}>
+        <div
+          id="omsResult"
+          className={styles.section}
+          style={{ minHeight: "40vh" }}
+        >
           <OmsResult />
         </div>
       </div>

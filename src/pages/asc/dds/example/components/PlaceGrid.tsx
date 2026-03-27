@@ -41,8 +41,8 @@ const PlaceGrid = ({ places, onSelect }: any) => {
   ];
 
   return (
-    <div style={{ height: "89%" }}>
-      <div className="ag-theme-alpine" style={{ height: "90%" }}>
+    <div style={{ height: "100%" }}>
+      <div className="ag-theme-alpine" style={{ height: "100%" }}>
         <AgGridReact
           ref={gridRef}
           rowData={places}

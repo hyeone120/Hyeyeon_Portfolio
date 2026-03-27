@@ -1,5 +1,6 @@
 import { Layout, theme } from "antd";
 import { Outlet } from "react-router-dom";
+import Footer from "../pages/Footer";
 const { Content } = Layout;
 
 const MainBody = () => {
@@ -11,7 +12,6 @@ const MainBody = () => {
     <Layout>
       <Content
         style={{
-          margin: "0 16px",
           height: "100%",
           overflowY: "auto",
         }}
@@ -25,6 +25,7 @@ const MainBody = () => {
         >
           <Outlet />
         </div>
+        <Footer />
       </Content>
     </Layout>
   );
