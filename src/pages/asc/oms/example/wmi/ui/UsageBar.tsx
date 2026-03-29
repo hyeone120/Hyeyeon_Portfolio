@@ -49,7 +49,7 @@ const UsageBar = ({ label, usage }: { label?: string; usage: number }) => {
         data: [usage],
         backgroundColor: graphColorFunc(usage),
         borderRadius: 5,
-        barThickness: 50,
+        barThickness: 55,
       },
     ],
   };

@@ -9,7 +9,7 @@ interface Props {
 
 const MonitoringUI = ({ cpu, memory, disks }: Props) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.monitoring}>
       <div className={styles.grid}>
         <div className={styles.left}>
           <div>
@@ -26,20 +26,12 @@ const MonitoringUI = ({ cpu, memory, disks }: Props) => {
         <div className={styles.right}>
           <h3 className={styles.subTitle}>Disk</h3>
 
-          <div className={styles.diskRow}>
-            <div className={styles.diskLabel}>Disk C</div>
-            <UsageBar label="Disk C" usage={disks[0]} />
-          </div>
-
-          <div className={styles.diskRow}>
-            <div className={styles.diskLabel}>Disk D</div>
-            <UsageBar label="Disk D" usage={disks[1]} />
-          </div>
-
-          <div className={styles.diskRow}>
-            <div className={styles.diskLabel}>Disk E</div>
-            <UsageBar label="Disk E" usage={disks[2]} />
-          </div>
+          {["C", "D", "E"].map((disk, i) => (
+            <div key={disk} className={styles.diskRow}>
+              <div className={styles.diskLabel}>Disk {disk}</div>
+              <UsageBar label={`Disk ${disk}`} usage={disks[i]} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

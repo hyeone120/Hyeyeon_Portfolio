@@ -8,9 +8,11 @@ export const contributions = [
     desc: "react-chartjs-2 기반으로 CPU, Memory, Disk 상태를 실시간으로 시각화하는 모니터링 대시보드를 개발했습니다.",
   },
   {
-    title: "UI 공통 컴포넌트 설계를 통해 코드 재사용성 및 개발 효율 개선",
+    title: "확장성을 고려한 모듈화 설계",
     desc: "반복 UI 요소를 컴포넌트화하여 코드 중복을 줄이고 유지보수 편의성 향상시켰습니다.",
   },
 ];
 
-export const results = ["기관 청장 대상 시스템 시연 및 사용자 교육 진행"];
+export const results = [
+  "기관 청장 대상 시스템 시연 및 사용자 교육을 진행하여 서비스 이해도 향상 및 안정적인 운영 지원",
+];

@@ -32,14 +32,21 @@ const MonitoringWmi = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <h2 className={styles.exTitle}>실시간 서버 모니터링</h2>
+    <>
+      <section className={styles.section}>
+        <h2 className={styles.title}>실시간 서버 모니터링 구현</h2>
 
-      <div className={styles.background}>
-        <MonitoringUI cpu={cpu} memory={memory} disks={disks} />
-        <CodeTabs />
-      </div>
-    </div>
+        <div className={styles.card}>
+          <MonitoringUI cpu={cpu} memory={memory} disks={disks} />
+
+          <div className={styles.exampleHeader}>구현 코드 예시</div>
+
+          <div className={styles.codeArea}>
+            <CodeTabs />
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

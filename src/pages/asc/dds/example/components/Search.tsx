@@ -20,12 +20,15 @@ const Search = ({ onChange }: any) => {
 
   return (
     <div className={styles.searchBox}>
-      <span style={{ marginRight: 10, fontSize: 16 }}>지역 선택:</span>
+      <span>지역 선택:</span>
+
       {regions.map((r) => (
         <button
           key={r}
           onClick={() => toggleRegion(r)}
-          className={styles.regionButton}
+          className={`${styles.regionButton} ${
+            selected.includes(r) ? styles.active : ""
+          }`}
         >
           {r}
         </button>

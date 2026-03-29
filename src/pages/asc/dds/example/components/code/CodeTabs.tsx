@@ -1,17 +1,18 @@
-import { frontendCode, sqlCode } from "./ChartData";
+import { backendCode, frontendCode } from "./ChartData";
 import CodeBlock from "./CodeBlock";
 import { Tabs } from "antd";
+
 const CodeTabs = () => {
   const items = [
     {
-      key: "sql",
-      label: "🗄️ SQL",
+      key: "Backend",
+      label: "☕ Backend",
       children: (
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <p style={{ color: "#9ca3af", fontSize: "13px" }}>
-            상태값 기준으로 데이터 집계
+            검색조건 기준으로 데이터 조회 및 페이징 처리 예시
           </p>
-          <CodeBlock code={sqlCode} />
+          <CodeBlock code={backendCode} />
         </div>
       ),
     },
@@ -21,7 +22,7 @@ const CodeTabs = () => {
       children: (
         <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
           <p style={{ color: "#9ca3af", fontSize: "13px" }}>
-            Chart.js 기반 Stacked Bar Chart 구현
+            Axios, AgGridReact로 테이블 구현 예시
           </p>
           <CodeBlock code={frontendCode} />
         </div>

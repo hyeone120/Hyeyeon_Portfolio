@@ -4,6 +4,7 @@ import PlaceGrid from "../components/PlaceGrid";
 import MapView from "../components/MapView";
 import { fetchPlaces } from "../api/placeApi";
 import styles from "./MapDashboard.module.scss";
+import CodeTabs from "../components/code/CodeTabs";
 
 const MapDashboard = () => {
   const [places, setPlaces] = useState<any[]>([]);
@@ -20,25 +21,37 @@ const MapDashboard = () => {
   };
 
   return (
-    <div className={styles.dashboard}>
-      <h2 className={styles.title}>예시</h2>
+    <>
+      <section className={styles.section}>
+        <h2 className={styles.title}>지역 기반 지도 검색</h2>
 
-      <Search onChange={handleRegionChange} />
+        <div className={styles.card}>
+          <div className={styles.searchArea}>
+            <Search onChange={handleRegionChange} />
+          </div>
 
-      <div className={styles.gridContainer}>
-        <div className={styles.placeGrid}>
-          <PlaceGrid places={places} onSelect={setSelectedPlace} />
+          <div className={styles.contentArea}>
+            <div className={styles.placeGrid}>
+              <PlaceGrid places={places} onSelect={setSelectedPlace} />
+            </div>
+
+            <div className={styles.mapView}>
+              <MapView
+                places={places}
+                selectedPlace={selectedPlace}
+                onSelect={setSelectedPlace}
+              />
+            </div>
+          </div>
+
+          <div className={styles.exampleHeader}>구현 코드 예시</div>
+
+          <div className={styles.codeArea}>
+            <CodeTabs />
+          </div>
         </div>
-
-        <div className={styles.mapView}>
-          <MapView
-            places={places}
-            selectedPlace={selectedPlace}
-            onSelect={setSelectedPlace}
-          />
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

@@ -65,17 +65,21 @@ const MonitoringChart = () => {
 
   return (
     <>
-      <h2 className={styles.title}>예시</h2>
-      <div className={styles.container}>
-        <h2>차트 시각화 구현</h2>
-        <div className={styles.wrapperColumn}>
-          <div className={styles.chart}>
+      <section className={styles.section}>
+        <h2 className={styles.title}>차트 시각화 구현</h2>
+
+        <div className={styles.card}>
+          <div className={styles.chartArea}>
             <Bar data={data} options={options} />
           </div>
 
-          <CodeTabs />
+          <div className={styles.exampleHeader}>구현 코드 예시</div>
+
+          <div className={styles.codeArea}>
+            <CodeTabs />
+          </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

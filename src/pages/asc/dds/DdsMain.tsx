@@ -60,7 +60,7 @@ const DdsMain = () => {
         <div
           id="ddsResult"
           className={styles.section}
-          style={{ minHeight: "60vh" }}
+          style={{ minHeight: "53vh" }}
         >
           <DdsResult />
         </div>
