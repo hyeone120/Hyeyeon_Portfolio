@@ -1,14 +1,14 @@
 # HyeYeon_Portfolio
 
-회사 재직 기간 동안 제가 기여도가 가장 높았던 프로젝트를 정리한 포트폴리오입니다.
+회사 재직 기간 동안 저의 기여도가 가장 높았던 프로젝트를 정리한 포트폴리오입니다.
 
 ---
 
 ## 주요 기술
 
--FrontEnd: React, TypeScript  
-BackEnd: Java, Spring Boot  
-Database / Tools: MSSQL, WebSocket
+- FrontEnd: React, TypeScript
+- BackEnd: Java, Spring Boot
+- Database: MSSQL
 
 ---
 
@@ -32,7 +32,7 @@ Database / Tools: MSSQL, WebSocket
 
 ---
 
-# 국군 제 9965 부대 통합 유지보수 및 신규 체계 연동 서버 구축
+## 국군 제 9965 부대 통합 유지보수 및 신규 체계 연동 서버 구축
 
 - 10년 이상 운영된 기존 시스템 유지보수 및 안정화
 - 여러 체계에서 SOAP을 통해 전송되는 데이터를 받아 저장하고 웹 서비스
