@@ -2,7 +2,7 @@ import { useState } from "react";
 import Search from "../components/Search";
 import PlaceGrid from "../components/PlaceGrid";
 import MapView from "../components/MapView";
-import { fetchPlaces } from "../api/placeApi";
+import { fetchPlaces } from "../api/PlaceApi";
 import styles from "./MapDashboard.module.scss";
 import CodeTabs from "../components/code/CodeTabs";
 

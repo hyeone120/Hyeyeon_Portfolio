@@ -1,4 +1,3 @@
-import React from "react";
 import { functions } from "./function";
 import styles from "../Dds.module.scss";
 
