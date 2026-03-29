@@ -11,6 +11,7 @@ const UsageBar = ({ label, usage }: { label?: string; usage: number }) => {
   const options = {
     indexAxis: "y" as const,
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: { min: 0, max: 100, display: false },
       y: { display: false },
@@ -27,18 +28,17 @@ const UsageBar = ({ label, usage }: { label?: string; usage: number }) => {
   const innerBarText = {
     id: "innerBarText",
     afterDatasetsDraw(chart: Chart) {
-      const {
-        ctx,
-        data,
-        chartArea: { left },
-        scales: { y },
-      } = chart;
+      const { ctx, data, chartArea } = chart;
       const value = data.datasets[0].data[0];
+
+      const xPos = chartArea.left + 10;
+      const yPos = (chartArea.top + chartArea.bottom) / 2 + 5; // 중앙 기준
 
       ctx.save();
       ctx.font = "bold 13px sans-serif";
       ctx.fillStyle = "white";
-      ctx.fillText(`${value}%`, left + 10, y.getPixelForValue(0) + 4);
+      ctx.fillText(`${value}%`, xPos, yPos);
+      ctx.restore();
     },
   };
 
@@ -49,7 +49,7 @@ const UsageBar = ({ label, usage }: { label?: string; usage: number }) => {
         data: [usage],
         backgroundColor: graphColorFunc(usage),
         borderRadius: 5,
-        barThickness: 55,
+        barThickness: 40,
       },
     ],
   };
@@ -58,6 +58,7 @@ const UsageBar = ({ label, usage }: { label?: string; usage: number }) => {
     <div
       style={{
         width: "80%",
+        height: 40,
         marginBottom: 12,
         background: "#bdbdbd",
         borderRadius: 5,
