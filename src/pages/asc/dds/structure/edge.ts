@@ -3,11 +3,12 @@ import { type Edge } from "reactflow";
 export const edges: Edge[] = [
   {
     id: "operation-scheduler",
-    source: "operation",
-    target: "scheduler",
+    source: "scheduler",
+    target: "operation",
     label: "JSON",
     type: "straight",
     targetHandle: "left",
+    animated: true,
   },
   {
     id: "sub-scheduler",
@@ -16,6 +17,7 @@ export const edges: Edge[] = [
     label: "산출물(zip)",
     type: "straight",
     targetHandle: "top",
+    animated: true,
   },
   {
     id: "scheduler-storage",
@@ -24,6 +26,7 @@ export const edges: Edge[] = [
     target: "storage",
     label: "메타데이터 저장",
     type: "straight",
+    animated: true,
   },
   {
     id: "storage-backend",
@@ -37,5 +40,6 @@ export const edges: Edge[] = [
     target: "frontend",
     label: "REST API",
     type: "straight",
+    animated: true,
   },
 ];

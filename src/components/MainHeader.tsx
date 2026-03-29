@@ -1,12 +1,17 @@
 import { Layout } from "antd";
-import "../styles/layout.scss";
+import { useNavigate } from "react-router-dom";
+import styles from "../styles/layout.module.scss";
 
 const { Header } = Layout;
 
 const MainHeader = () => {
+  const navigate = useNavigate();
+
   return (
-    <Header style={{ display: "flex", alignItems: "center" }}>
-      <div className="logo">LEE HYEYEON</div>
+    <Header className={styles.header}>
+      <div className={styles.logo} onClick={() => navigate("/")}>
+        LEE HYEYEON
+      </div>
     </Header>
   );
 };

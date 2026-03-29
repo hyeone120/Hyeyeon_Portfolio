@@ -1,45 +1,37 @@
 import { type Node } from "reactflow";
 
-const box = {
-  width: 180,
-  padding: 10,
-  border: "1px solid #4a6c82",
-  background: "#9fb6c0",
-  textAlign: "center" as const,
-};
-
 export const nodes: Node[] = [
   // 서브시스템
   {
     id: "sub1",
-    position: { x: 100, y: 50 },
+    type: "subSystemNode",
+    position: { x: 100, y: 60 },
     data: { label: "서브시스템1" },
-    style: box,
   },
   {
     id: "sub2",
-    position: { x: 320, y: 50 },
+    type: "subSystemNode",
+    position: { x: 320, y: 60 },
     data: { label: "서브시스템2" },
-    style: box,
   },
   {
     id: "sub3",
-    position: { x: 540, y: 50 },
+    type: "subSystemNode",
+    position: { x: 540, y: 60 },
     data: { label: "서브시스템3" },
-    style: box,
   },
   {
     id: "sub4",
-    position: { x: 760, y: 50 },
+    type: "subSystemNode",
+    position: { x: 760, y: 60 },
     data: { label: "서브시스템4" },
-    style: box,
   },
 
   // OMS
   {
     id: "oms",
     type: "omsNode",
-    position: { x: 200, y: 200 },
+    position: { x: 200, y: 210 },
     data: {},
   },
 
@@ -47,23 +39,23 @@ export const nodes: Node[] = [
   {
     id: "bridge",
     type: "bridgeNode",
-    position: { x: 200, y: 340 },
+    position: { x: 200, y: 350 },
     data: {},
   },
 
   // DDS 관리자
   {
     id: "ddsAdmin",
-    type: "DdsAdminNode",
-    position: { x: 400, y: 480 },
+    type: "ddsAdminNode",
+    position: { x: 400, y: 490 },
     data: {},
   },
 
   // DDS 사용자
   {
     id: "ddsUser",
-    type: "DdsUserNode",
-    position: { x: 700, y: 480 },
+    type: "ddsUserNode",
+    position: { x: 700, y: 490 },
     data: {},
   },
 
@@ -71,7 +63,7 @@ export const nodes: Node[] = [
   {
     id: "user",
     type: "userNode",
-    position: { x: 950, y: 480 },
+    position: { x: 950, y: 490 },
     data: {},
   },
 ];

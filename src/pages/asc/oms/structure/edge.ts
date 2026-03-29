@@ -14,6 +14,7 @@ export const edges: Edge[] = [
     target: "backend",
     targetHandle: "http",
     label: "HTTP",
+    animated: true,
   },
   {
     id: "backend-frontend",

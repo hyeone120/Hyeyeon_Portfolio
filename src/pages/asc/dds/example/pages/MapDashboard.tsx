@@ -21,7 +21,7 @@ const MapDashboard = () => {
 
   return (
     <div className={styles.dashboard}>
-      <h2>예시</h2>
+      <h2 className={styles.title}>예시</h2>
 
       <Search onChange={handleRegionChange} />
 

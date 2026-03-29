@@ -61,7 +61,7 @@ const OmsMain = () => {
         <div
           id="omsResult"
           className={styles.section}
-          style={{ minHeight: "40vh" }}
+          style={{ minHeight: "20vh" }}
         >
           <OmsResult />
         </div>

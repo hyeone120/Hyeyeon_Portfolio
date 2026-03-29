@@ -20,7 +20,7 @@ const Search = ({ onChange }: any) => {
 
   return (
     <div className={styles.searchBox}>
-      <span style={{ marginRight: 10 }}>지역 선택:</span>
+      <span style={{ marginRight: 10, fontSize: 16 }}>지역 선택:</span>
       {regions.map((r) => (
         <button
           key={r}

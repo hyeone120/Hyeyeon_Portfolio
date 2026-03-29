@@ -1,11 +1,13 @@
 .dashboard {
-  height: 75vh;
+  height: 90vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 
-  > h2 {
-    margin-bottom: 20px;
+  .title {
+    margin: 50px 0 30px 0;
+    font-size: 24px;
+    font-weight: bold;
   }
 
   .gridContainer {

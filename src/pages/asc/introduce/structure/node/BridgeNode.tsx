@@ -2,9 +2,11 @@ import { Handle, Position } from "reactflow";
 
 const bridgeStyle = {
   width: 600,
-  border: "1px solid #6ea0c4",
-  background: "#8fb4d6",
+  border: "1px solid #adaeaf",
+  color: "#1f2937",
+  background: "#f3f6fb",
   textAlign: "center" as const,
+  borderRadius: 5,
   padding: 10,
 };
 
