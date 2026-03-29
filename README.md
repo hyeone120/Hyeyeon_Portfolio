@@ -1,73 +1,43 @@
-# React + TypeScript + Vite
+# HyeYeon_Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+회사 재직 기간 동안 제가 기여도가 가장 높았던 프로젝트를 정리한 포트폴리오입니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 주요 기술
 
-## React Compiler
+-FrontEnd: React, TypeScript  
+BackEnd: Java, Spring Boot  
+Database / Tools: MSSQL, WebSocket
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 농업위성정보 활용시스템
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 운영관리 시스템 (내부망)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 서버 및 스토리지, 산출물 상태를 실시간으로 모니터링
+- 로그 및 사용자 관리 기능 제공
+- 기여 및 성과:
+  - 서버 및 산출물 상태 대시보드 구현 → 운영팀 장애 대응 시간 단축
+  - React 기반 UI 구현으로 데이터 시각화 및 사용자 편의성 개선
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 자료배포 시스템 (외부망)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 산출물을 지도 기반으로 시각화하여 외부 사용자에게 제공
+- 검색 및 필터링 기능 구현
+- 기여 및 성과:
+  - 외부 사용자 대상 실시간 자료 조회 및 다운로드 기능 개발
+  - 지도 API 활용, 데이터 직관적 시각화 구현
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 국군 제 9965 부대 통합 유지보수 및 신규 체계 연동 서버 구축
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- 10년 이상 운영된 기존 시스템 유지보수 및 안정화
+- 여러 체계에서 SOAP을 통해 전송되는 데이터를 받아 저장하고 웹 서비스
+- 신규 체계 연동을 기존 시스템에 추가
+- 기여 및 성과:
+  - 신규 체계 추가 연동 성공 → 기존 서비스에 영향 없이 운영
+  - 데이터 안정성 및 웹 서비스 신뢰성 향상
+  - SOAP 데이터 처리 및 DB 연동 최적화
