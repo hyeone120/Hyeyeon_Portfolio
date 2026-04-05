@@ -2,12 +2,14 @@ import ReactFlow, { Background, Controls } from "reactflow";
 import { nodes } from "./node";
 import { edges } from "./edge";
 import BaseNode from "./node/BaseNode";
+import UserNode from "./node/UserNode";
 import "reactflow/dist/style.css";
 import styles from "../ImageSystem.module.scss";
 
 const Structure = () => {
   const nodeTypes = {
     baseNode: BaseNode,
+    userNode: UserNode,
   };
 
   return (

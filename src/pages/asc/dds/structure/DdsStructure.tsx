@@ -3,11 +3,13 @@ import { nodes } from "./node";
 import { edges } from "./edge";
 import BaseNode from "./node/BaseNode";
 import SchedulerNode from "./node/SchedulerNode";
+import DataFileNode from "./node/DataFileNode";
 
 const DdsStructure = () => {
   const nodeTypes = {
     baseNode: BaseNode,
     schedulerNode: SchedulerNode,
+    dataFileNode: DataFileNode,
   };
 
   return (

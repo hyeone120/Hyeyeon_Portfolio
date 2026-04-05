@@ -1,7 +1,7 @@
 import { Handle, type NodeProps } from "reactflow";
 
 export const ddsBox = {
-  width: 200,
+  width: 230,
   padding: 10,
   border: "1px solid #93c5fd",
   background: "#dbeafe",
@@ -10,7 +10,7 @@ export const ddsBox = {
 };
 
 const otherBox = {
-  width: 200,
+  width: 230,
   padding: 10,
   border: "1px solid #adaeaf",
   color: "#1f2937",

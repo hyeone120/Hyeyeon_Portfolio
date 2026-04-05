@@ -4,7 +4,7 @@ export const nodes: Node[] = [
   // 1차 서버
   {
     id: "server1-1",
-    position: { x: 50, y: 70 },
+    position: { x: 100, y: 70 },
     type: "baseNode",
     data: {
       label: "1차서버",
@@ -14,7 +14,7 @@ export const nodes: Node[] = [
   },
   {
     id: "server1-2",
-    position: { x: 50, y: 220 },
+    position: { x: 100, y: 220 },
     type: "baseNode",
     data: {
       label: "1차서버",
@@ -24,7 +24,7 @@ export const nodes: Node[] = [
   },
   {
     id: "server1-3",
-    position: { x: 50, y: 370 },
+    position: { x: 100, y: 370 },
     type: "baseNode",
     data: {
       label: "1차서버",
@@ -36,7 +36,7 @@ export const nodes: Node[] = [
   // 2차 서버
   {
     id: "server2-1",
-    position: { x: 250, y: 70 },
+    position: { x: 300, y: 70 },
     type: "baseNode",
     data: {
       label: "2차서버",
@@ -46,7 +46,7 @@ export const nodes: Node[] = [
   },
   {
     id: "server2-2",
-    position: { x: 250, y: 220 },
+    position: { x: 300, y: 220 },
     type: "baseNode",
     data: {
       label: "2차서버",
@@ -56,7 +56,7 @@ export const nodes: Node[] = [
   },
   {
     id: "server2-3",
-    position: { x: 250, y: 370 },
+    position: { x: 300, y: 370 },
     type: "baseNode",
     data: {
       label: "2차서버",
@@ -68,7 +68,7 @@ export const nodes: Node[] = [
   // 수집서버
   {
     id: "collector",
-    position: { x: 450, y: 220 },
+    position: { x: 500, y: 220 },
     type: "baseNode",
     data: {
       label: "수집서버",
@@ -80,7 +80,7 @@ export const nodes: Node[] = [
   // WAS
   {
     id: "was",
-    position: { x: 700, y: 220 },
+    position: { x: 750, y: 220 },
     type: "baseNode",
     data: {
       label: "WAS (JEUS)",
@@ -92,19 +92,15 @@ export const nodes: Node[] = [
   // 사용자
   {
     id: "user",
-    position: { x: 950, y: 220 },
-    type: "baseNode",
-    data: {
-      label: "사용자",
-      targetPosition: Position.Left,
-      styleType: "otherBox",
-    },
+    type: "userNode",
+    position: { x: 1000, y: 220 },
+    data: {},
   },
 
   // 스토리지
   {
     id: "storage",
-    position: { x: 575, y: 320 },
+    position: { x: 630, y: 320 },
     type: "baseNode",
     data: {
       label: "스토리지",

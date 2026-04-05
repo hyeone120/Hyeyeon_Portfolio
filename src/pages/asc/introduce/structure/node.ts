@@ -5,25 +5,25 @@ export const nodes: Node[] = [
   {
     id: "sub1",
     type: "subSystemNode",
-    position: { x: 100, y: 60 },
+    position: { x: 150, y: 60 },
     data: { label: "서브시스템1" },
   },
   {
     id: "sub2",
     type: "subSystemNode",
-    position: { x: 320, y: 60 },
+    position: { x: 370, y: 60 },
     data: { label: "서브시스템2" },
   },
   {
     id: "sub3",
     type: "subSystemNode",
-    position: { x: 540, y: 60 },
+    position: { x: 590, y: 60 },
     data: { label: "서브시스템3" },
   },
   {
     id: "sub4",
     type: "subSystemNode",
-    position: { x: 760, y: 60 },
+    position: { x: 810, y: 60 },
     data: { label: "서브시스템4" },
   },
 
@@ -31,7 +31,7 @@ export const nodes: Node[] = [
   {
     id: "oms",
     type: "omsNode",
-    position: { x: 200, y: 210 },
+    position: { x: 250, y: 210 },
     data: {},
   },
 
@@ -39,7 +39,7 @@ export const nodes: Node[] = [
   {
     id: "bridge",
     type: "bridgeNode",
-    position: { x: 200, y: 350 },
+    position: { x: 250, y: 350 },
     data: {},
   },
 
@@ -47,7 +47,7 @@ export const nodes: Node[] = [
   {
     id: "ddsAdmin",
     type: "ddsAdminNode",
-    position: { x: 400, y: 490 },
+    position: { x: 435, y: 490 },
     data: {},
   },
 
@@ -55,7 +55,7 @@ export const nodes: Node[] = [
   {
     id: "ddsUser",
     type: "ddsUserNode",
-    position: { x: 700, y: 490 },
+    position: { x: 750, y: 490 },
     data: {},
   },
 
@@ -63,7 +63,7 @@ export const nodes: Node[] = [
   {
     id: "user",
     type: "userNode",
-    position: { x: 950, y: 490 },
+    position: { x: 1050, y: 490 },
     data: {},
   },
 ];

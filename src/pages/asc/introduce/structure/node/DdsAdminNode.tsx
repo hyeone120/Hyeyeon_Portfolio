@@ -1,7 +1,7 @@
 import { Handle, Position } from "reactflow";
 
 const box = {
-  width: 200,
+  width: 230,
   padding: 10,
   border: "1px solid #93c5fd",
   background: "#dbeafe",
